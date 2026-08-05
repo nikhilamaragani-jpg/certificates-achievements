@@ -1,6 +1,6 @@
 <div align="center">
 
-# Certificates · Internships · Achievements
+# Certificates · Training · Achievements
 
 ### Amaragani Nikhil Sai · B.Tech CSE · Continuous upskilling record
 
@@ -11,7 +11,7 @@
 
 ---
 
-## Internships & training
+## Training & industry exposure
 
 | Program | Focus |
 |---------|--------|
