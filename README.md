@@ -11,21 +11,28 @@
 
 ---
 
-## Training & industry exposure
+## Training programs
 
-| Program | Focus |
-|---------|--------|
-| AI Intern — Agrasta Academy | Preprocessing, training, evaluation |
-| Industrial Training in AI — Agrasta | Applied ML lifecycle |
-| Conscience Technologies (Apr–May 2025) | Blockchain notarization + eID mini project |
-| Summer of AI | Program exposure |
+| Program | Duration / notes | Focus |
+|---------|------------------|--------|
+| **AI Intern — Agrasta Academy** | 2 months | Data preprocessing, model training, evaluation |
+| **Industrial Training in AI — Agrasta Academy** | 2 months | ML lifecycle and applied implementation |
+| **Conscience Technologies** | Apr–May 2025 | Blockchain notarization + eID mini project (industry mentoring) |
+| **Summer of AI** | Program exposure | Applied AI program participation |
 
-## Workshops
+## Workshops & certifications
 
 - Power BI Workshop — Office Master  
 - Python with AI Workshop — Office Master  
+- Artificial Intelligence Internship Certificate — Agrasta Academy  
+- Artificial Intelligence Industrial Training Certificate — Agrasta Academy  
 
-## Project portfolio
+## Practice work
+
+- **Power BI dashboards** — two dashboards for reporting and visualization practice  
+- **Volunteer — Student Tribe** — student engagement and coordination support  
+
+## Project portfolio (primary evidence)
 
 | Project | Repo |
 |---------|------|
@@ -36,9 +43,16 @@
 
 ## Education
 
-**B.Tech CSE** · SIIET (JNTUH) · Expected May 2026 · CGPA 7.0
+| Level | Detail |
+|-------|--------|
+| **B.Tech CSE** | SIIET (JNTUH) · Expected May 2026 · CGPA 7.0 / 10 |
+| **Intermediate (MPC)** | Telangana State Board · 784 marks |
+| **SSC** | CGPA 9.3 / 10 |
 
 ## Contact
 
 - Portfolio: https://nikhilamaragani-jpg.github.io/  
 - Email: nikhilamaragani@gmail.com · Phone: +91 93913 33050  
+- LinkedIn: https://www.linkedin.com/in/nikhil-sai-amaragani-219115382  
+
+> Tip: PDF certificate files can be added to this repo later under a `files/` folder if you want downloadable evidence on GitHub.
