@@ -4,7 +4,7 @@
 
 ### Amaragani Nikhil Sai · B.Tech CSE · Continuous upskilling record
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-5b8cff?style=for-the-badge)](https://nikhilamaragani-jpg.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-22D3EE?style=for-the-badge&labelColor=0A101F)](https://nikhilamaragani-jpg.github.io/)
 [![GitHub](https://img.shields.io/badge/Profile-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/nikhilamaragani-jpg)
 
 </div>
@@ -29,10 +29,10 @@
 
 ## Practice work
 
-- **Power BI dashboards** — two dashboards for reporting and visualization practice  
+- **Power BI dashboards** — reporting and visualization practice  
 - **Volunteer — Student Tribe** — student engagement and coordination support  
 
-## Project portfolio (primary evidence)
+## Project portfolio
 
 | Project | Repo |
 |---------|------|
@@ -45,7 +45,7 @@
 
 | Level | Detail |
 |-------|--------|
-| **B.Tech CSE** | SIIET (JNTUH) · Expected May 2026 · CGPA 7.0 / 10 |
+| **B.Tech CSE** | SIIET (JNTUH) · **Graduated 2026** · **CGPA 6.9 / 10** |
 | **Intermediate (MPC)** | Telangana State Board · 784 marks |
 | **SSC** | CGPA 9.3 / 10 |
 
@@ -54,5 +54,3 @@
 - Portfolio: https://nikhilamaragani-jpg.github.io/  
 - Email: nikhilamaragani@gmail.com · Phone: +91 93913 33050  
 - LinkedIn: https://www.linkedin.com/in/nikhil-sai-amaragani-219115382  
-
-> Tip: PDF certificate files can be added to this repo later under a `files/` folder if you want downloadable evidence on GitHub.
