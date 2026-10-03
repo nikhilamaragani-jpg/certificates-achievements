@@ -35,4 +35,5 @@ The supplied Power BI workshop document contains dashboard pages labeled **Campf
 - Only the IBM Coursera course above has a verification URL recorded here.
 - No dates, grades, client outcomes or employment claims are inferred where the supplied evidence does not establish them.
 - One duplicate copy of the Power BI workshop certificate was omitted because its SHA-256 hash matched the other upload exactly.
+- The IBM certificate uploaded again on October 3, 2026 was byte-for-byte identical to the existing IBM Coursera certificate; the existing file and record are reused rather than duplicated.
 - Planned courses are listed separately in the [career roadmap](CAREER_ROADMAP.md), not as earned credentials.

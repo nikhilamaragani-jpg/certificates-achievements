@@ -57,6 +57,23 @@
     .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
     .chip { padding: 4px 9px; border: 1px solid var(--line); border-radius: 99px; color: #38544b; font-size: .82rem; }
     .callout { border-left: 3px solid var(--gold); padding: 4px 0 4px 18px; color: var(--muted); }
+    .credential-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 28px 0; }
+    .summary-card { padding: 17px 19px; border: 1px solid var(--line); border-radius: 7px; background: #fbfcfa; }
+    .summary-value { display: block; color: var(--green); font: 600 1.9rem/1.15 Georgia, serif; }
+    .summary-label { display: block; margin-top: 5px; color: var(--muted); font-size: .83rem; }
+    .filters { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 26px 0 18px; }
+    .filters-label { margin-right: 3px; color: var(--muted); font-size: .88rem; font-weight: 650; }
+    .filter-button { padding: 7px 13px; border: 1px solid var(--line); border-radius: 99px; background: #fff; color: var(--ink); font: inherit; font-size: .85rem; cursor: pointer; }
+    .filter-button[aria-pressed="true"] { border-color: var(--green); background: var(--green); color: #fff; }
+    .filter-button:focus-visible, a:focus-visible { outline: 3px solid #b47a33; outline-offset: 3px; }
+    .credential-card { grid-column: span 6; display: flex; flex-direction: column; align-items: flex-start; min-height: 230px; }
+    .credential-card[hidden] { display: none; }
+    .credential-card .card-bottom { margin-top: auto; padding-top: 12px; }
+    .credential-card .card-bottom a { display: inline-block; margin: 5px 12px 0 0; font-size: .92rem; font-weight: 700; }
+    .credential-status { display: inline-flex; align-items: center; gap: 7px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 99px; color: #34584d; background: #edf5f0; font-size: .78rem; font-weight: 750; }
+    .credential-status.pending { border-color: #ead6ba; color: #80551f; background: #fff5e8; }
+    .credential-meta { margin: 0 0 10px !important; color: #687770 !important; font-size: .87rem; }
+    .empty-state { grid-column: span 12; padding: 28px; color: var(--muted); text-align: center; }
     .roadmap { background: #e9eee8; }
     .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
     .step { padding: 17px; border-top: 2px solid var(--green); background: rgba(255,255,255,.72); }
@@ -71,8 +88,10 @@
       .card, .card.wide { grid-column: span 12; }
       .section-head { align-items: flex-start; flex-direction: column; }
       .steps { grid-template-columns: repeat(2, 1fr); }
+      .credential-summary { grid-template-columns: repeat(2, 1fr); }
+      .credential-card { grid-column: span 12; }
     }
-    @media (max-width: 420px) { .steps { grid-template-columns: 1fr; } }
+    @media (max-width: 420px) { .steps, .credential-summary { grid-template-columns: 1fr; } }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
@@ -137,40 +156,88 @@
     <section id="credentials" style="background:#fff">
       <div class="wrap">
         <div class="section-head">
-          <h2>Verified learning &amp; training</h2>
-          <p>Completed courses, workshops, training and an offer letter are distinguished rather than grouped under a single certificate claim.</p>
+          <h2>Credentials &amp; achievements</h2>
+          <p>A structured evidence register: each item is labeled by its actual status, issuer, date and supporting document.</p>
+        </div>
+        <div class="credential-summary" aria-label="Evidence summary">
+          <div class="summary-card"><span class="summary-value">1</span><span class="summary-label">IBM analytics course completed</span></div>
+          <div class="summary-card"><span class="summary-value">2</span><span class="summary-label">Technical workshop certificates</span></div>
+          <div class="summary-card"><span class="summary-value">2</span><span class="summary-label">AI internship and training records</span></div>
+          <div class="summary-card"><span class="summary-value">1</span><span class="summary-label">Internship offer letter, separate from completions</span></div>
+        </div>
+        <p class="callout">The IBM credential is <strong>Introduction to Data Analytics</strong>, one course in the IBM Data Analyst Professional Certificate—not the completed professional certificate. Workshop and training records are labeled separately.</p>
+        <div class="filters" role="group" aria-label="Filter credential records">
+          <span class="filters-label">Filter evidence:</span>
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="course" aria-pressed="false">Course</button>
+          <button class="filter-button" type="button" data-filter="workshop" aria-pressed="false">Workshops</button>
+          <button class="filter-button" type="button" data-filter="training" aria-pressed="false">Training</button>
+          <button class="filter-button" type="button" data-filter="offer" aria-pressed="false">Offer letter</button>
+          <span id="credential-count" class="filters-label" aria-live="polite">Showing 6 evidence records</span>
         </div>
         <div class="grid">
-          <article class="card">
-            <div class="label">Completed · October 2026</div>
-            <h3>IBM — Introduction to Data Analytics</h3>
-            <p>The first course in the IBM Data Analyst Professional Certificate; the full professional certificate is not claimed as complete.</p>
-            <a href="https://coursera.org/verify/E6Z1ON902KHZ">Verify the course on Coursera →</a>
-            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/IBM-Introduction-to-Data-Analytics-Coursera.pdf">Open the certificate PDF →</a></p>
+          <article class="card credential-card" data-category="course">
+            <span class="credential-status">Course completed</span>
+            <h3>Introduction to Data Analytics</h3>
+            <p class="credential-meta">IBM · Coursera · October 3, 2026</p>
+            <p>Course 1 of the IBM Data Analyst Professional Certificate. It is not the full professional certificate.</p>
+            <div class="card-bottom">
+              <a href="https://coursera.org/verify/E6Z1ON902KHZ">Verify on Coursera ↗</a>
+              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/nikhilamaragani-jpg-elite-certificates-profile/certificates/IBM-Introduction-to-Data-Analytics-Coursera.pdf">View certificate PDF ↗</a>
+            </div>
           </article>
-          <article class="card">
-            <div class="label">Workshop certificates</div>
-            <h3>Power BI &amp; Python</h3>
-            <p>Workshop certificates from Office Master, listed as workshops rather than vendor professional certifications.</p>
-            <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">See certificate files and register →</a>
-            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Power-BI-Workshop-Office-Master.pdf">Power BI workshop certificate →</a></p>
-            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Python-Workshop-Office-Master.pdf">Python workshop certificate →</a></p>
+          <article class="card credential-card" data-category="workshop">
+            <span class="credential-status">Workshop certificate</span>
+            <h3>Power BI Workshop</h3>
+            <p class="credential-meta">Office Master · Workshop date not stated</p>
+            <p>Workshop participation evidence; not a Microsoft professional certification.</p>
+            <div class="card-bottom">
+              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/nikhilamaragani-jpg-elite-certificates-profile/certificates/Power-BI-Workshop-Office-Master.pdf">View certificate PDF ↗</a>
+              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/nikhilamaragani-jpg-elite-certificates-profile/workshop-evidence/Power-BI-Workshop-Dashboards.pdf">View dashboard exercises ↗</a>
+            </div>
           </article>
-          <article class="card">
-            <div class="label">Adjacent experience</div>
-            <h3>Artificial Intelligence</h3>
-            <p>A completed Agrasta Academy internship and industrial training. These are retained as adjacent experience alongside the data-analyst focus.</p>
-            <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">Review training evidence →</a>
-            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Agrasta-Academy-AI-Internship-2024.pdf">AI internship certificate →</a></p>
-            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Agrasta-Academy-Industrial-Training-AI.pdf">AI industrial training certificate →</a></p>
+          <article class="card credential-card" data-category="workshop">
+            <span class="credential-status">Workshop certificate</span>
+            <h3>Python Workshop</h3>
+            <p class="credential-meta">Office Master · Workshop date not stated</p>
+            <p>Workshop learning evidence, listed distinctly from a vendor-issued professional qualification.</p>
+            <div class="card-bottom">
+              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/nikhilamaragani-jpg-elite-certificates-profile/certificates/Python-Workshop-Office-Master.pdf">View certificate PDF ↗</a>
+            </div>
           </article>
-          <article class="card">
-            <div class="label">Offer letter · not completion evidence</div>
-            <h3>Summer of AI internship</h3>
-            <p>The supplied document is an offer letter; it is not presented as proof of acceptance or a completed internship.</p>
-            <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">See the evidence register →</a>
-            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Summer-of-AI-Internship-Offer-Letter.pdf">Open the offer letter PDF →</a></p>
+          <article class="card credential-card" data-category="training">
+            <span class="credential-status">Internship completed</span>
+            <h3>Artificial Intelligence Internship</h3>
+            <p class="credential-meta">Agrasta Academy · October 11–December 10, 2024</p>
+            <p>Internship certificate dated December 20, 2024. AI experience presented as adjacent experience to the data-analyst focus.</p>
+            <div class="card-bottom">
+              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/nikhilamaragani-jpg-elite-certificates-profile/certificates/Agrasta-Academy-AI-Internship-2024.pdf">View certificate PDF ↗</a>
+            </div>
           </article>
+          <article class="card credential-card" data-category="training">
+            <span class="credential-status">Industrial training completed</span>
+            <h3>Artificial Intelligence Industrial Training</h3>
+            <p class="credential-meta">Agrasta Academy · Completion certificate supplied</p>
+            <p>The certificate records completion and AI training; dates are not stated here.</p>
+            <div class="card-bottom">
+              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/nikhilamaragani-jpg-elite-certificates-profile/certificates/Agrasta-Academy-Industrial-Training-AI.pdf">View certificate PDF ↗</a>
+            </div>
+          </article>
+          <article class="card credential-card" data-category="offer">
+            <span class="credential-status pending">Offer letter · completion not established</span>
+            <h3>Summer of AI Internship</h3>
+            <p class="credential-meta">Offer letter supplied</p>
+            <p>This document alone does not establish acceptance or that the internship was completed.</p>
+            <div class="card-bottom">
+              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/nikhilamaragani-jpg-elite-certificates-profile/certificates/Summer-of-AI-Internship-Offer-Letter.pdf">View offer letter PDF ↗</a>
+            </div>
+          </article>
+        </div>
+        <p style="margin-top:20px"><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/nikhilamaragani-jpg-elite-certificates-profile/docs/CREDENTIALS.md">Open the full credential and achievement register →</a></p>
+        <div class="card wide" style="margin-top:20px">
+          <div class="label">Additional achievement · not a certificate</div>
+          <h3>Mini-project mentoring</h3>
+          <p>Conscience Technologies · April–May 2025, as recorded in the repository's original notes. No separate supporting certificate or project file was supplied, so this is identified as a recorded achievement rather than a verified credential.</p>
         </div>
       </div>
     </section>
@@ -199,5 +266,29 @@
       <span><a href="https://github.com/nikhilamaragani-jpg">GitHub</a> · <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements">Certificates &amp; achievements repository</a></span>
     </div>
   </footer>
+  <script>
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const credentialCards = document.querySelectorAll(".credential-card");
+    const credentialCount = document.getElementById("credential-count");
+
+    for (const button of filterButtons) {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        let visibleCount = 0;
+
+        for (const card of credentialCards) {
+          const isVisible = filter === "all" || card.dataset.category === filter;
+          card.hidden = !isVisible;
+          visibleCount += Number(isVisible);
+        }
+
+        for (const filterButton of filterButtons) {
+          filterButton.setAttribute("aria-pressed", String(filterButton === button));
+        }
+
+        credentialCount.textContent = `Showing ${visibleCount} evidence ${visibleCount === 1 ? "record" : "records"}`;
+      });
+    }
+  </script>
 </body>
 </html>
