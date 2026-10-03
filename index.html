@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amaragani Nikhil Sai — entry-level Data Analyst portfolio, credentials and projects.">
+  <meta name="theme-color" content="#102522">
+  <title>Amaragani Nikhil Sai | Data Analyst Portfolio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172522;
+      --muted: #53635e;
+      --paper: #f6f5ef;
+      --surface: #ffffff;
+      --line: #dce3dc;
+      --green: #17685e;
+      --gold: #b47a33;
+      --night: #102522;
+      --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    a { color: var(--green); text-underline-offset: .2em; }
+    a:hover { color: #0b493f; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
+    .topbar { border-bottom: 1px solid var(--line); background: rgba(246,245,239,.94); }
+    .nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { color: var(--ink); font-weight: 750; letter-spacing: -.02em; text-decoration: none; }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 20px; }
+    .navlinks a { color: var(--muted); font-size: .91rem; text-decoration: none; }
+    .hero { background: var(--night); color: #f7f7f0; padding: 92px 0 82px; }
+    .eyebrow { color: #b8d4c9; font-size: .78rem; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
+    h1 { max-width: 780px; margin: 16px 0 18px; font: 500 clamp(2.7rem, 7vw, 5.3rem)/1.04 Georgia, serif; letter-spacing: -.045em; }
+    .hero p { max-width: 720px; color: #d3dfd8; font-size: 1.15rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 10px 17px; border: 1px solid #b8d4c9; border-radius: 5px; color: #f7f7f0; font-weight: 700; text-decoration: none; }
+    .button.primary { border-color: #a5d2c1; background: #a5d2c1; color: #102522; }
+    .meta { margin-top: 26px; color: #b8c8c0; font-size: .93rem; }
+    section { padding: 66px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
+    h2 { margin: 0; font: 500 clamp(1.9rem, 4vw, 2.7rem)/1.15 Georgia, serif; letter-spacing: -.025em; }
+    .section-head p { max-width: 460px; margin: 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 17px; }
+    .card { grid-column: span 6; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+    .card.wide { grid-column: span 12; }
+    .label { color: var(--gold); font-size: .74rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    h3 { margin: 8px 0 8px; font-size: 1.18rem; letter-spacing: -.015em; }
+    .card p { margin: 0 0 13px; color: var(--muted); }
+    .card ul { margin: 10px 0 0; padding-left: 19px; color: var(--muted); }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .chip { padding: 4px 9px; border: 1px solid var(--line); border-radius: 99px; color: #38544b; font-size: .82rem; }
+    .callout { border-left: 3px solid var(--gold); padding: 4px 0 4px 18px; color: var(--muted); }
+    .roadmap { background: #e9eee8; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
+    .step { padding: 17px; border-top: 2px solid var(--green); background: rgba(255,255,255,.72); }
+    .step small { display: block; margin-bottom: 6px; color: var(--green); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .step strong { display: block; }
+    footer { padding: 30px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+    @media (max-width: 720px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 15px 0; }
+      .navlinks { gap: 12px; }
+      .hero { padding: 68px 0 58px; }
+      .card, .card.wide { grid-column: span 12; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .steps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 420px) { .steps { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">Nikhil Sai</a>
+      <div class="navlinks">
+        <a href="#work">Selected work</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#direction">Career direction</a>
+        <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/FOR_RECRUITERS.md">Recruiter profile</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">Data analytics · evidence-led learning</div>
+        <h1>Turning data questions into clear next steps.</h1>
+        <p>I'm Amaragani Nikhil Sai, a B.Tech Computer Science &amp; Engineering graduate building toward entry-level Data Analyst and BI Analyst roles. This portfolio brings together my verified learning, workshop evidence and reproducible project work.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/projects/claims-intelligence-foundation/README.md">Explore the project</a>
+          <a class="button" href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">View credentials</a>
+        </div>
+        <div class="meta">Hyderabad, India · Interested in Europe, including Germany and Switzerland · Open to relocation and sponsorship discussions where required</div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p>Each item is labeled by its actual scope. Workshop artifacts and synthetic-data projects are not represented as client work.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="label">Introductory case study</div>
+            <h3>Claims Operations: Analyst Foundations</h3>
+            <p>A reproducible synthetic-data exercise in question framing, KPI definition, data-quality checks, descriptive analysis and clear limitations.</p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">Matplotlib</span><span class="chip">Synthetic data</span></div>
+            <p style="margin-top:18px"><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/projects/claims-intelligence-foundation/README.md">Read the project and methods →</a></p>
+            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/projects/claims-intelligence-foundation/reports/project_brief.pdf">Open the shareable project brief (PDF) →</a></p>
+          </article>
+          <article class="card">
+            <div class="label">Workshop evidence</div>
+            <h3>Power BI dashboard exercises</h3>
+            <p>The supplied workshop PDF includes pages labeled Campfly Sales Analysis and Netflix Analysis. Original artifact preserved for review.</p>
+            <p style="margin-top:18px"><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/workshop-evidence/Power-BI-Workshop-Dashboards.pdf">Open the workshop dashboards →</a></p>
+            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/DASHBOARD_REVIEW.md">Read the review and redesign plan →</a></p>
+          </article>
+          <article class="card wide">
+            <div class="label">How I approach analysis</div>
+            <h3>Start with the decision, not the chart</h3>
+            <p>Define the audience and question, agree on the metric, validate the data, explain the result, and make assumptions visible. This is the foundation I am building before extending projects into SQL, deeper Python analysis and Power BI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials" style="background:#fff">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Verified learning &amp; training</h2>
+          <p>Completed courses, workshops, training and an offer letter are distinguished rather than grouped under a single certificate claim.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="label">Completed · October 2026</div>
+            <h3>IBM — Introduction to Data Analytics</h3>
+            <p>The first course in the IBM Data Analyst Professional Certificate; the full professional certificate is not claimed as complete.</p>
+            <a href="https://coursera.org/verify/E6Z1ON902KHZ">Verify the course on Coursera →</a>
+            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/IBM-Introduction-to-Data-Analytics-Coursera.pdf">Open the certificate PDF →</a></p>
+          </article>
+          <article class="card">
+            <div class="label">Workshop certificates</div>
+            <h3>Power BI &amp; Python</h3>
+            <p>Workshop certificates from Office Master, listed as workshops rather than vendor professional certifications.</p>
+            <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">See certificate files and register →</a>
+            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Power-BI-Workshop-Office-Master.pdf">Power BI workshop certificate →</a></p>
+            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Python-Workshop-Office-Master.pdf">Python workshop certificate →</a></p>
+          </article>
+          <article class="card">
+            <div class="label">Adjacent experience</div>
+            <h3>Artificial Intelligence</h3>
+            <p>A completed Agrasta Academy internship and industrial training. These are retained as adjacent experience alongside the data-analyst focus.</p>
+            <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">Review training evidence →</a>
+            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Agrasta-Academy-AI-Internship-2024.pdf">AI internship certificate →</a></p>
+            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Agrasta-Academy-Industrial-Training-AI.pdf">AI industrial training certificate →</a></p>
+          </article>
+          <article class="card">
+            <div class="label">Offer letter · not completion evidence</div>
+            <h3>Summer of AI internship</h3>
+            <p>The supplied document is an offer letter; it is not presented as proof of acceptance or a completed internship.</p>
+            <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">See the evidence register →</a>
+            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Summer-of-AI-Internship-Offer-Letter.pdf">Open the offer letter PDF →</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap" id="direction">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Building depth, step by step</h2>
+          <p>Data Analyst is the central career goal. Future stages stay labeled as planned until the learning and project evidence are complete.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><small>Current foundation</small><strong>Analytics lifecycle &amp; project practice</strong></div>
+          <div class="step"><small>Next</small><strong>Excel, SQL, Python &amp; Power BI depth</strong></div>
+          <div class="step"><small>Specialize</small><strong>Statistics, BI &amp; cloud analytics</strong></div>
+          <div class="step"><small>Longer term</small><strong>Analytics engineering &amp; data engineering</strong></div>
+        </div>
+        <p style="margin-top:24px"><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CAREER_ROADMAP.md">Read the full staged roadmap →</a></p>
+        <p class="callout" style="margin-top:24px">International roles are a target, not a guarantee. Visa sponsorship and work eligibility depend on the destination, employer and individual circumstances.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Amaragani Nikhil Sai · Data Analyst portfolio</span>
+      <span><a href="https://github.com/nikhilamaragani-jpg">GitHub</a> · <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements">Certificates &amp; achievements repository</a></span>
+    </div>
+  </footer>
+</body>
+</html>

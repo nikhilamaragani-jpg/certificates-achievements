@@ -1,0 +1,5 @@
+market,total_claims,open_claims,median_closed_resolution_days,incurred_amount_eur,open_claim_rate_pct
+France,60,15,34.0,110430,25.0
+Germany,60,9,28.0,93510,15.0
+Netherlands,60,3,21.0,115290,5.0
+Switzerland,60,6,23.5,104370,10.0

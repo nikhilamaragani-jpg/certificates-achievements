@@ -1,19 +1,31 @@
-# For recruiters / HR / international hiring
+# Recruiter profile
 
 ## Candidate
-Amaragani Nikhil Sai — B.Tech CSE (expected May 2026), Hyderabad, India.
 
-## Strengths
-- Runnable project portfolio (not only academic PDFs)
-- Clear communication and documentation
-- Domain themes: ML classification, conversational AI, digital identity, compliance automation
-- Internship + industrial training in AI
+**Amaragani Nikhil Sai** · B.Tech Computer Science & Engineering · Graduated 2026
+Hyderabad, India
 
-## Work authorization note
-Indian national open to international internships/graduate roles and employers experienced with sponsorship processes (including Europe). Happy to discuss timelines and documentation requirements.
+## Target roles
 
-## Verification
-- GitHub: https://github.com/nikhilamaragani-jpg
-- Portfolio: https://nikhilamaragani-jpg.github.io/portfolio/
-- Certificates repo: this repository
-- Academic reports available on request
+Entry-level **Data Analyst** and **BI Analyst** roles. Current learning evidence includes IBM's *Introduction to Data Analytics* course, Power BI and Python workshop certificates, and an introductory analytics case study with documented synthetic data.
+
+## Evidence
+
+- [Course and training register](CREDENTIALS.md)
+- [Reproducible claims-operations case study](../projects/claims-intelligence-foundation/README.md)
+- [Power BI workshop dashboards](../workshop-evidence/Power-BI-Workshop-Dashboards.pdf)
+- [IBM Coursera course verification](https://coursera.org/verify/E6Z1ON902KHZ)
+
+Previous AI-related internship and industrial training are listed as adjacent experience. The portfolio identifies the case-study data as synthetic and does not present workshop material as client work.
+
+## International mobility
+
+Interested in opportunities in Europe, particularly Germany and Switzerland, and open to discussing relocation and employer-sponsored work authorization where required. Work eligibility and sponsorship requirements depend on the specific country, role and individual circumstances; no visa approval or current work authorization is implied here.
+
+## Links
+
+- GitHub profile: https://github.com/nikhilamaragani-jpg
+- Portfolio website: https://nikhilamaragani-jpg.github.io/
+- Certificates and achievements repository: https://github.com/nikhilamaragani-jpg/certificates-achievements
+
+Add a public LinkedIn URL and contact details only when ready to share them.
