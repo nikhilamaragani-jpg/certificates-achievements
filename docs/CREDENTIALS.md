@@ -1,6 +1,6 @@
-# Credentials, training and portfolio evidence
+# Credentials, training and workshop records
 
-This register distinguishes completed courses and training from offers and future plans. Original files are kept in the repository so a reviewer can inspect the evidence directly.
+This register separates courses, workshops, training and internship offers. Original files are kept in the repository so a reviewer can inspect the evidence directly. See [ACHIEVEMENTS.md](ACHIEVEMENTS.md) for dashboard and project work that complements these credentials.
 
 ## Course and workshop evidence
 

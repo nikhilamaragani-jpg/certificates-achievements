@@ -12,7 +12,7 @@ https://nikhilamaragani-jpg.github.io/
 
 **Repository description**
 
-> Data analytics portfolio, verified course and workshop evidence, and a reproducible introductory project.
+> Certificates, training and achievements—organized with original evidence and clear status labels.
 
 **Repository topics**
 
