@@ -23,6 +23,7 @@ I am building a practical foundation in data analytics: starting with the analyt
 
 - **IBM — Introduction to Data Analytics**, completed October 3, 2026. [Verify on Coursera](https://coursera.org/verify/E6Z1ON902KHZ)
 - **Power BI workshop** and **Python workshop**, Office Master.
+- **AI Tools & Claude Workshop** certificate from BE10X; the uploaded copy's recipient and issue-date fields are blank, so it is listed as supplied evidence pending a complete copy.
 - **Artificial Intelligence internship** and **industrial training**, Agrasta Academy.
 - **Mini-project mentoring**, Conscience Technologies (April–May 2025), as recorded in the original repository notes.
 - **Summer of AI internship offer letter** — listed as an offer letter, not as proof of a completed internship.
