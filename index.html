@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Amaragani Nikhil Sai — entry-level Data Analyst portfolio, credentials and projects.">
-  <meta name="theme-color" content="#102522">
-  <title>Amaragani Nikhil Sai | Data Analyst Portfolio</title>
+  <meta name="description" content="An organized, evidence-led catalogue of Amaragani Nikhil Sai's certificates, training and achievements.">
+  <meta name="theme-color" content="#142a27">
+  <title>Certificates &amp; Achievements | Amaragani Nikhil Sai</title>
   <style>
     :root {
       color-scheme: light;
-      --ink: #172522;
-      --muted: #53635e;
-      --paper: #f6f5ef;
-      --surface: #ffffff;
-      --line: #dce3dc;
+      --ink: #182824;
+      --muted: #596a64;
+      --paper: #f5f5f0;
+      --surface: #fff;
+      --line: #dce3dd;
       --green: #17685e;
-      --gold: #b47a33;
-      --night: #102522;
-      --max: 1080px;
+      --green-dark: #104a43;
+      --gold: #87541f;
+      --night: #142a27;
+      --soft-green: #eaf3ed;
+      --soft-gold: #fff5e8;
+      --max: 1120px;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -27,83 +30,94 @@
       color: var(--ink);
       font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
     }
-    a { color: var(--green); text-underline-offset: .2em; }
+    a { color: var(--green-dark); text-underline-offset: .2em; }
     a:hover { color: #0b493f; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #bd7d36; outline-offset: 3px; }
     .wrap { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
-    .topbar { border-bottom: 1px solid var(--line); background: rgba(246,245,239,.94); }
+    .topbar { border-bottom: 1px solid var(--line); background: #fbfbf8; }
     .nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand { color: var(--ink); font-weight: 750; letter-spacing: -.02em; text-decoration: none; }
-    .navlinks { display: flex; flex-wrap: wrap; gap: 20px; }
-    .navlinks a { color: var(--muted); font-size: .91rem; text-decoration: none; }
-    .hero { background: var(--night); color: #f7f7f0; padding: 92px 0 82px; }
-    .eyebrow { color: #b8d4c9; font-size: .78rem; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
-    h1 { max-width: 780px; margin: 16px 0 18px; font: 500 clamp(2.7rem, 7vw, 5.3rem)/1.04 Georgia, serif; letter-spacing: -.045em; }
-    .hero p { max-width: 720px; color: #d3dfd8; font-size: 1.15rem; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 10px 17px; border: 1px solid #b8d4c9; border-radius: 5px; color: #f7f7f0; font-weight: 700; text-decoration: none; }
+    .brand { display: flex; align-items: center; gap: 11px; color: var(--ink); font-weight: 760; letter-spacing: -.02em; text-decoration: none; }
+    .brand-mark { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 4px; background: var(--night); color: #eaf3ed; font: 600 1rem Georgia, serif; }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 22px; }
+    .navlinks a { color: var(--muted); font-size: .9rem; font-weight: 620; text-decoration: none; }
+    .hero { position: relative; overflow: hidden; background: var(--night); color: #f7f7f0; padding: 76px 0 58px; }
+    .hero::after { position: absolute; right: max(4vw, calc((100vw - var(--max)) / 2)); top: 44px; width: 176px; height: 176px; border: 1px solid rgba(184,212,201,.22); border-radius: 50%; content: ""; box-shadow: 0 0 0 20px rgba(184,212,201,.035), 0 0 0 42px rgba(184,212,201,.025); pointer-events: none; }
+    .eyebrow { color: #b8d4c9; font-size: .76rem; font-weight: 760; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { position: relative; z-index: 1; max-width: 800px; margin: 15px 0 14px; font: 500 clamp(2.6rem, 6vw, 4.6rem)/1.05 Georgia, serif; letter-spacing: -.04em; }
+    .hero p { position: relative; z-index: 1; max-width: 690px; margin: 0; color: #d3dfd8; font-size: 1.06rem; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 9px 24px; margin-top: 25px; color: #b8c8c0; font-size: .9rem; }
+    .hero-meta span::before { margin-right: 8px; color: #9cc8b7; content: "•"; }
+    .actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 27px; }
+    .button { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: 9px 15px; border: 1px solid #b8d4c9; border-radius: 4px; color: #f7f7f0; font-size: .92rem; font-weight: 700; text-decoration: none; }
     .button.primary { border-color: #a5d2c1; background: #a5d2c1; color: #102522; }
-    .meta { margin-top: 26px; color: #b8c8c0; font-size: .93rem; }
-    section { padding: 66px 0; }
-    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
-    h2 { margin: 0; font: 500 clamp(1.9rem, 4vw, 2.7rem)/1.15 Georgia, serif; letter-spacing: -.025em; }
-    .section-head p { max-width: 460px; margin: 0; color: var(--muted); }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 17px; }
-    .card { grid-column: span 6; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
-    .card.wide { grid-column: span 12; }
-    .label { color: var(--gold); font-size: .74rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
-    h3 { margin: 8px 0 8px; font-size: 1.18rem; letter-spacing: -.015em; }
-    .card p { margin: 0 0 13px; color: var(--muted); }
-    .card ul { margin: 10px 0 0; padding-left: 19px; color: var(--muted); }
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-    .chip { padding: 4px 9px; border: 1px solid var(--line); border-radius: 99px; color: #38544b; font-size: .82rem; }
-    .callout { border-left: 3px solid var(--gold); padding: 4px 0 4px 18px; color: var(--muted); }
-    .credential-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 28px 0; }
-    .summary-card { padding: 17px 19px; border: 1px solid var(--line); border-radius: 7px; background: #fbfcfa; }
-    .summary-value { display: block; color: var(--green); font: 600 1.9rem/1.15 Georgia, serif; }
-    .summary-label { display: block; margin-top: 5px; color: var(--muted); font-size: .83rem; }
-    .filters { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 26px 0 18px; }
-    .filters-label { margin-right: 3px; color: var(--muted); font-size: .88rem; font-weight: 650; }
-    .filter-button { padding: 7px 13px; border: 1px solid var(--line); border-radius: 99px; background: #fff; color: var(--ink); font: inherit; font-size: .85rem; cursor: pointer; }
-    .filter-button[aria-pressed="true"] { border-color: var(--green); background: var(--green); color: #fff; }
-    .filter-button:focus-visible, a:focus-visible { outline: 3px solid #b47a33; outline-offset: 3px; }
-    .credential-card { grid-column: span 6; display: flex; flex-direction: column; align-items: flex-start; min-height: 230px; }
-    .credential-card[hidden] { display: none; }
-    .credential-card .card-bottom { margin-top: auto; padding-top: 12px; }
-    .credential-card .card-bottom a { display: inline-block; margin: 5px 12px 0 0; font-size: .92rem; font-weight: 700; }
-    .credential-status { display: inline-flex; align-items: center; gap: 7px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 99px; color: #34584d; background: #edf5f0; font-size: .78rem; font-weight: 750; }
-    .credential-status.pending { border-color: #ead6ba; color: #80551f; background: #fff5e8; }
-    .credential-meta { margin: 0 0 10px !important; color: #687770 !important; font-size: .87rem; }
-    .empty-state { grid-column: span 12; padding: 28px; color: var(--muted); text-align: center; }
-    .roadmap { background: #e9eee8; }
-    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
-    .step { padding: 17px; border-top: 2px solid var(--green); background: rgba(255,255,255,.72); }
-    .step small { display: block; margin-bottom: 6px; color: var(--green); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-    .step strong { display: block; }
-    footer { padding: 30px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
-    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
-    @media (max-width: 720px) {
-      .nav { align-items: flex-start; flex-direction: column; padding: 15px 0; }
-      .navlinks { gap: 12px; }
-      .hero { padding: 68px 0 58px; }
-      .card, .card.wide { grid-column: span 12; }
+    section { padding: 58px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 23px; }
+    h2 { margin: 0; font: 500 clamp(1.85rem, 3.8vw, 2.55rem)/1.14 Georgia, serif; letter-spacing: -.025em; }
+    .section-head p { max-width: 530px; margin: 0; color: var(--muted); font-size: .96rem; }
+    .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 25px 0 21px; }
+    .summary-card { min-height: 105px; padding: 17px 18px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); }
+    .summary-value { display: block; color: var(--green); font: 600 2rem/1.05 Georgia, serif; }
+    .summary-label { display: block; margin-top: 7px; color: var(--muted); font-size: .82rem; line-height: 1.4; }
+    .notice { margin: 20px 0; padding: 12px 16px; border-left: 3px solid var(--gold); background: var(--soft-gold); color: #594321; font-size: .91rem; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 25px 0 16px; }
+    .toolbar-label { margin-right: 3px; color: var(--muted); font-size: .86rem; font-weight: 700; }
+    .filter-button { min-height: 36px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); color: var(--ink); font: inherit; font-size: .83rem; cursor: pointer; }
+    .filter-button[aria-pressed="true"] { border-color: var(--green-dark); background: var(--green-dark); color: #fff; }
+    #record-count { margin-left: auto; color: var(--muted); font-size: .84rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 15px; }
+    .record { grid-column: span 6; display: flex; min-height: 232px; flex-direction: column; align-items: flex-start; padding: 21px 22px 18px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); }
+    .record[hidden] { display: none; }
+    .record-topline { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 10px; }
+    .record-kind { color: var(--gold); font-size: .71rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .status { display: inline-flex; align-items: center; padding: 4px 8px; border: 1px solid #d2e6d9; border-radius: 99px; background: var(--soft-green); color: #25583f; font-size: .72rem; font-weight: 740; line-height: 1.3; }
+    .status.review { border-color: #ead6ba; background: var(--soft-gold); color: #80551f; }
+    .status.offer { border-color: #e1dfd8; background: #f4f3ef; color: #59615d; }
+    h3 { margin: 12px 0 4px; font-size: 1.1rem; letter-spacing: -.01em; line-height: 1.35; }
+    .record-meta { margin: 0 0 11px; color: #66766f; font-size: .83rem; }
+    .record-description { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
+    .record-links { display: flex; flex-wrap: wrap; gap: 5px 16px; margin-top: auto; padding-top: 17px; }
+    .record-links a { font-size: .86rem; font-weight: 730; }
+    .empty-state { grid-column: span 12; padding: 26px; color: var(--muted); text-align: center; }
+    .achievement-section { background: #e9eee8; }
+    .achievement { grid-column: span 4; padding: 21px; border-top: 2px solid var(--green); background: rgba(255,255,255,.86); }
+    .achievement .record-kind { display: block; }
+    .achievement h3 { margin-top: 10px; }
+    .achievement p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .learning-note { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; margin-top: 22px; padding: 22px 24px; border: 1px solid var(--line); background: #fff; }
+    .learning-note h3 { margin-top: 0; }
+    .learning-note p { max-width: 730px; margin: 0; color: var(--muted); font-size: .9rem; }
+    .button.light { border-color: var(--green); color: var(--green-dark); }
+    .footer { padding: 25px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .86rem; }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+    @media (max-width: 760px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 13px 0; }
+      .navlinks { gap: 14px; }
+      .hero { padding: 59px 0 45px; }
+      .hero::after { right: -72px; top: 7px; }
       .section-head { align-items: flex-start; flex-direction: column; }
-      .steps { grid-template-columns: repeat(2, 1fr); }
-      .credential-summary { grid-template-columns: repeat(2, 1fr); }
-      .credential-card { grid-column: span 12; }
+      .summary { grid-template-columns: repeat(2, 1fr); }
+      .record { grid-column: span 12; min-height: 0; }
+      .achievement { grid-column: span 6; }
+      .learning-note { grid-template-columns: 1fr; }
     }
-    @media (max-width: 420px) { .steps, .credential-summary { grid-template-columns: 1fr; } }
+    @media (max-width: 460px) {
+      .summary, .achievement { grid-template-columns: 1fr; }
+      .achievement { grid-column: span 12; }
+      #record-count { width: 100%; margin-left: 0; }
+      .record-topline { align-items: flex-start; flex-direction: column; }
+    }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
 <body>
   <header class="topbar">
     <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#home">Nikhil Sai</a>
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">NS</span> Amaragani Nikhil Sai</a>
       <div class="navlinks">
-        <a href="#work">Selected work</a>
-        <a href="#credentials">Credentials</a>
-        <a href="#direction">Career direction</a>
-        <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/FOR_RECRUITERS.md">Recruiter profile</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#about">About this collection</a>
+        <a href="https://github.com/nikhilamaragani-jpg">GitHub profile</a>
       </div>
     </nav>
   </header>
@@ -111,183 +125,201 @@
   <main>
     <section class="hero" id="home">
       <div class="wrap">
-        <div class="eyebrow">Data analytics · evidence-led learning</div>
-        <h1>Turning data questions into clear next steps.</h1>
-        <p>I'm Amaragani Nikhil Sai, a B.Tech Computer Science &amp; Engineering graduate building toward entry-level Data Analyst and BI Analyst roles. This portfolio brings together my verified learning, workshop evidence and reproducible project work.</p>
+        <div class="eyebrow">Professional development portfolio</div>
+        <h1>Certificates &amp; achievements,<br>organized with evidence.</h1>
+        <p>A curated record of completed analytics learning, workshops, technical training and portfolio work. Every item is labeled by what its supporting document actually establishes.</p>
+        <div class="hero-meta">
+          <span>Amaragani Nikhil Sai</span>
+          <span>B.Tech Computer Science &amp; Engineering · Graduated 2026</span>
+          <span>Analytics learning &amp; professional development</span>
+        </div>
         <div class="actions">
-          <a class="button primary" href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/projects/claims-intelligence-foundation/README.md">Explore the project</a>
-          <a class="button" href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">View credentials</a>
-        </div>
-        <div class="meta">Hyderabad, India · Interested in Europe, including Germany and Switzerland · Open to relocation and sponsorship discussions where required</div>
-      </div>
-    </section>
-
-    <section id="work">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Selected work</h2>
-          <p>Each item is labeled by its actual scope. Workshop artifacts and synthetic-data projects are not represented as client work.</p>
-        </div>
-        <div class="grid">
-          <article class="card">
-            <div class="label">Introductory case study</div>
-            <h3>Claims Operations: Analyst Foundations</h3>
-            <p>A reproducible synthetic-data exercise in question framing, KPI definition, data-quality checks, descriptive analysis and clear limitations.</p>
-            <div class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">Matplotlib</span><span class="chip">Synthetic data</span></div>
-            <p style="margin-top:18px"><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/projects/claims-intelligence-foundation/README.md">Read the project and methods →</a></p>
-            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/projects/claims-intelligence-foundation/reports/project_brief.pdf">Open the shareable project brief (PDF) →</a></p>
-          </article>
-          <article class="card">
-            <div class="label">Workshop evidence</div>
-            <h3>Power BI dashboard exercises</h3>
-            <p>The supplied workshop PDF includes pages labeled Campfly Sales Analysis and Netflix Analysis. Original artifact preserved for review.</p>
-            <p style="margin-top:18px"><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/workshop-evidence/Power-BI-Workshop-Dashboards.pdf">Open the workshop dashboards →</a></p>
-            <p><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/DASHBOARD_REVIEW.md">Read the review and redesign plan →</a></p>
-          </article>
-          <article class="card wide">
-            <div class="label">How I approach analysis</div>
-            <h3>Start with the decision, not the chart</h3>
-            <p>Define the audience and question, agree on the metric, validate the data, explain the result, and make assumptions visible. This is the foundation I am building before extending projects into SQL, deeper Python analysis and Power BI.</p>
-          </article>
+          <a class="button primary" href="#certificates">Browse the evidence register</a>
+          <a class="button" href="docs/CREDENTIALS.md">Open register as Markdown</a>
         </div>
       </div>
     </section>
 
-    <section id="credentials" style="background:#fff">
+    <section id="certificates">
       <div class="wrap">
         <div class="section-head">
-          <h2>Credentials &amp; achievements</h2>
-          <p>A structured evidence register: each item is labeled by its actual status, issuer, date and supporting document.</p>
+          <h2>Certificate register</h2>
+          <p>Filter by evidence type. Open the original document or verification page from each record.</p>
         </div>
-        <div class="credential-summary" aria-label="Evidence summary">
-          <div class="summary-card"><span class="summary-value">1</span><span class="summary-label">IBM analytics course completed</span></div>
-          <div class="summary-card"><span class="summary-value">3</span><span class="summary-label">Workshop certificates supplied</span></div>
-          <div class="summary-card"><span class="summary-value">2</span><span class="summary-label">AI internship and training records</span></div>
-          <div class="summary-card"><span class="summary-value">1</span><span class="summary-label">Internship offer letter, separate from completions</span></div>
+
+        <div class="summary" aria-label="Evidence register summary">
+          <div class="summary-card"><span class="summary-value">5</span><span class="summary-label">Completion or training records with certificates</span></div>
+          <div class="summary-card"><span class="summary-value">1</span><span class="summary-label">Workshop certificate supplied; attribution needs confirmation</span></div>
+          <div class="summary-card"><span class="summary-value">1</span><span class="summary-label">Internship offer letter, not a completion certificate</span></div>
+          <div class="summary-card"><span class="summary-value">3</span><span class="summary-label">Portfolio and mentoring achievements, with evidence status stated</span></div>
         </div>
-        <p class="callout">The IBM credential is <strong>Introduction to Data Analytics</strong>, one course in the IBM Data Analyst Professional Certificate—not the completed professional certificate. Workshop and training records are labeled separately.</p>
-        <div class="filters" role="group" aria-label="Filter credential records">
-          <span class="filters-label">Filter evidence:</span>
-          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-button" type="button" data-filter="course" aria-pressed="false">Course</button>
+
+        <div class="notice">
+          <strong>Credential accuracy:</strong> IBM <em>Introduction to Data Analytics</em> is one completed course in the IBM Data Analyst Professional Certificate, not the full professional certificate. The BE10X copy has blank recipient and date fields. An offer letter is not evidence of a completed internship.
+        </div>
+
+        <div class="toolbar" role="group" aria-label="Filter the certificate and achievement register">
+          <span class="toolbar-label">Show:</span>
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All records</button>
+          <button class="filter-button" type="button" data-filter="course" aria-pressed="false">Courses</button>
           <button class="filter-button" type="button" data-filter="workshop" aria-pressed="false">Workshops</button>
           <button class="filter-button" type="button" data-filter="training" aria-pressed="false">Training</button>
           <button class="filter-button" type="button" data-filter="offer" aria-pressed="false">Offer letter</button>
-          <span id="credential-count" class="filters-label" aria-live="polite">Showing 7 evidence records</span>
+          <button class="filter-button" type="button" data-filter="achievement" aria-pressed="false">Achievements</button>
+          <span id="record-count" aria-live="polite">Showing 10 records</span>
         </div>
-        <div class="grid">
-          <article class="card credential-card" data-category="course">
-            <span class="credential-status">Course completed</span>
+
+        <div class="grid" id="record-grid">
+          <article class="record" data-category="course">
+            <div class="record-topline"><span class="record-kind">Data analytics · course</span><span class="status">Completed</span></div>
             <h3>Introduction to Data Analytics</h3>
-            <p class="credential-meta">IBM · Coursera · October 3, 2026</p>
-            <p>Course 1 of the IBM Data Analyst Professional Certificate. It is not the full professional certificate.</p>
-            <div class="card-bottom">
+            <p class="record-meta">IBM · Coursera · October 3, 2026</p>
+            <p class="record-description">Course 1 of the IBM Data Analyst Professional Certificate. The full professional certificate is not claimed as complete.</p>
+            <div class="record-links">
               <a href="https://coursera.org/verify/E6Z1ON902KHZ">Verify on Coursera ↗</a>
-              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/IBM-Introduction-to-Data-Analytics-Coursera.pdf">View certificate PDF ↗</a>
+              <a href="certificates/IBM-Introduction-to-Data-Analytics-Coursera.pdf">Certificate PDF ↗</a>
             </div>
           </article>
-          <article class="card credential-card" data-category="workshop">
-            <span class="credential-status">Workshop certificate</span>
+
+          <article class="record" data-category="workshop">
+            <div class="record-topline"><span class="record-kind">Business intelligence · workshop</span><span class="status">Certificate supplied</span></div>
             <h3>Power BI Workshop</h3>
-            <p class="credential-meta">Office Master · Workshop date not stated</p>
-            <p>Workshop participation evidence; not a Microsoft professional certification.</p>
-            <div class="card-bottom">
-              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Power-BI-Workshop-Office-Master.pdf">View certificate PDF ↗</a>
-              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/workshop-evidence/Power-BI-Workshop-Dashboards.pdf">View dashboard exercises ↗</a>
+            <p class="record-meta">Office Master · Workshop date not stated</p>
+            <p class="record-description">Workshop certificate, supported by separate dashboard exercises. This is not a Microsoft professional certification.</p>
+            <div class="record-links">
+              <a href="certificates/Power-BI-Workshop-Office-Master.pdf">Certificate PDF ↗</a>
+              <a href="workshop-evidence/Power-BI-Workshop-Dashboards.pdf">Dashboard exercises ↗</a>
             </div>
           </article>
-          <article class="card credential-card" data-category="workshop">
-            <span class="credential-status">Workshop certificate</span>
+
+          <article class="record" data-category="workshop">
+            <div class="record-topline"><span class="record-kind">Programming · workshop</span><span class="status">Certificate supplied</span></div>
             <h3>Python Workshop</h3>
-            <p class="credential-meta">Office Master · Workshop date not stated</p>
-            <p>Workshop learning evidence, listed distinctly from a vendor-issued professional qualification.</p>
-            <div class="card-bottom">
-              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Python-Workshop-Office-Master.pdf">View certificate PDF ↗</a>
-            </div>
+            <p class="record-meta">Office Master · Workshop date not stated</p>
+            <p class="record-description">Workshop learning record. Listed separately from vendor-issued professional qualifications.</p>
+            <div class="record-links"><a href="certificates/Python-Workshop-Office-Master.pdf">Certificate PDF ↗</a></div>
           </article>
-          <article class="card credential-card" data-category="workshop">
-            <span class="credential-status pending">Certificate supplied · recipient/date fields blank</span>
+
+          <article class="record" data-category="workshop">
+            <div class="record-topline"><span class="record-kind">Applied AI · workshop</span><span class="status review">Attribution to confirm</span></div>
             <h3>AI Tools &amp; Claude Workshop</h3>
-            <p class="credential-meta">BE10X · Issue date not shown on the uploaded copy</p>
-            <p>The document describes AI-assisted presentations, data analysis, coding and debugging. Because its recipient field is blank, this copy does not independently confirm who completed the workshop.</p>
-            <div class="card-bottom">
-              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/BE10X-AI-Tools-Claude-Workshop.pdf">View uploaded certificate PDF ↗</a>
-            </div>
+            <p class="record-meta">BE10X · Issue date not shown</p>
+            <p class="record-description">The supplied copy describes AI-assisted presentations, data analysis, coding and debugging. Its recipient and issue-date fields appear blank, so it does not independently verify personal completion.</p>
+            <div class="record-links"><a href="certificates/BE10X-AI-Tools-Claude-Workshop.pdf">Supplied certificate PDF ↗</a></div>
           </article>
-          <article class="card credential-card" data-category="training">
-            <span class="credential-status">Internship completed</span>
+
+          <article class="record" data-category="training">
+            <div class="record-topline"><span class="record-kind">Artificial intelligence · internship</span><span class="status">Completed</span></div>
             <h3>Artificial Intelligence Internship</h3>
-            <p class="credential-meta">Agrasta Academy · October 11–December 10, 2024</p>
-            <p>Internship certificate dated December 20, 2024. AI experience presented as adjacent experience to the data-analyst focus.</p>
-            <div class="card-bottom">
-              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Agrasta-Academy-AI-Internship-2024.pdf">View certificate PDF ↗</a>
-            </div>
+            <p class="record-meta">Agrasta Academy · October 11–December 10, 2024</p>
+            <p class="record-description">Internship completion certificate dated December 20, 2024. Listed as adjacent technical experience.</p>
+            <div class="record-links"><a href="certificates/Agrasta-Academy-AI-Internship-2024.pdf">Certificate PDF ↗</a></div>
           </article>
-          <article class="card credential-card" data-category="training">
-            <span class="credential-status">Industrial training completed</span>
+
+          <article class="record" data-category="training">
+            <div class="record-topline"><span class="record-kind">Artificial intelligence · industrial training</span><span class="status">Completed</span></div>
             <h3>Artificial Intelligence Industrial Training</h3>
-            <p class="credential-meta">Agrasta Academy · Completion certificate supplied</p>
-            <p>The certificate records completion and AI training; dates are not stated here.</p>
-            <div class="card-bottom">
-              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Agrasta-Academy-Industrial-Training-AI.pdf">View certificate PDF ↗</a>
-            </div>
+            <p class="record-meta">Agrasta Academy · Date not stated</p>
+            <p class="record-description">The supplied certificate records successful completion of industrial training in Artificial Intelligence.</p>
+            <div class="record-links"><a href="certificates/Agrasta-Academy-Industrial-Training-AI.pdf">Certificate PDF ↗</a></div>
           </article>
-          <article class="card credential-card" data-category="offer">
-            <span class="credential-status pending">Offer letter · completion not established</span>
+
+          <article class="record" data-category="offer">
+            <div class="record-topline"><span class="record-kind">Artificial intelligence · internship</span><span class="status offer">Offer letter only</span></div>
             <h3>Summer of AI Internship</h3>
-            <p class="credential-meta">Offer letter supplied</p>
-            <p>This document alone does not establish acceptance or that the internship was completed.</p>
-            <div class="card-bottom">
-              <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/certificates/Summer-of-AI-Internship-Offer-Letter.pdf">View offer letter PDF ↗</a>
+            <p class="record-meta">Offer letter · organization named in the document</p>
+            <p class="record-description">Retained for completeness. The offer letter alone does not establish acceptance or internship completion.</p>
+            <div class="record-links"><a href="certificates/Summer-of-AI-Internship-Offer-Letter.pdf">Offer letter PDF ↗</a></div>
+          </article>
+
+          <article class="record" data-category="achievement">
+            <div class="record-topline"><span class="record-kind">Portfolio work · dashboard practice</span><span class="status">Workshop artifact</span></div>
+            <h3>Power BI dashboard exercises</h3>
+            <p class="record-meta">Campfly Sales Analysis · Netflix Analysis</p>
+            <p class="record-description">Two dashboard pages preserved from the supplied workshop export; not represented as client work or independently verified business outcomes.</p>
+            <div class="record-links">
+              <a href="workshop-evidence/Power-BI-Workshop-Dashboards.pdf">Open dashboard evidence ↗</a>
+              <a href="docs/DASHBOARD_REVIEW.md">Review notes ↗</a>
             </div>
           </article>
+
+          <article class="record" data-category="achievement">
+            <div class="record-topline"><span class="record-kind">Portfolio work · data analysis</span><span class="status">Synthetic-data case study</span></div>
+            <h3>Claims Operations: Analyst Foundations</h3>
+            <p class="record-meta">Python · pandas · Matplotlib</p>
+            <p class="record-description">An introductory, reproducible analysis with explicit business questions, KPI definitions, data-quality checks and limitations. All data is synthetic.</p>
+            <div class="record-links">
+              <a href="projects/claims-intelligence-foundation/README.md">Project details ↗</a>
+              <a href="projects/claims-intelligence-foundation/reports/project_brief.pdf">Shareable project brief ↗</a>
+            </div>
+          </article>
+
+          <article class="record" data-category="achievement">
+            <div class="record-topline"><span class="record-kind">Mentoring · recorded achievement</span><span class="status review">Supporting file not supplied</span></div>
+            <h3>Mini-project mentoring</h3>
+            <p class="record-meta">Conscience Technologies · April–May 2025</p>
+            <p class="record-description">Recorded in the repository's original notes. No separate certificate or project artifact was supplied, so this remains a stated achievement rather than a verified credential.</p>
+            <div class="record-links"><a href="docs/ACHIEVEMENTS.md">Achievement evidence notes ↗</a></div>
+          </article>
         </div>
-        <p style="margin-top:20px"><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CREDENTIALS.md">Open the full credential and achievement register →</a></p>
-        <div class="card wide" style="margin-top:20px">
-          <div class="label">Additional achievement · not a certificate</div>
-          <h3>Mini-project mentoring</h3>
-          <p>Conscience Technologies · April–May 2025, as recorded in the repository's original notes. No separate supporting certificate or project file was supplied, so this is identified as a recorded achievement rather than a verified credential.</p>
-        </div>
+        <noscript><p class="notice">All records are shown. Enable JavaScript to filter the register by evidence type.</p></noscript>
       </div>
     </section>
 
-    <section class="roadmap" id="direction">
+    <section class="achievement-section" id="achievements">
       <div class="wrap">
         <div class="section-head">
-          <h2>Building depth, step by step</h2>
-          <p>Data Analyst is the central career goal. Future stages stay labeled as planned until the learning and project evidence are complete.</p>
+          <h2>Achievements &amp; applied evidence</h2>
+          <p>Work samples sit alongside credentials, but are identified as projects and workshop artifacts—not certificates or employment.</p>
         </div>
-        <div class="steps">
-          <div class="step"><small>Current foundation</small><strong>Analytics lifecycle &amp; project practice</strong></div>
-          <div class="step"><small>Next</small><strong>Excel, SQL, Python &amp; Power BI depth</strong></div>
-          <div class="step"><small>Specialize</small><strong>Statistics, BI &amp; cloud analytics</strong></div>
-          <div class="step"><small>Longer term</small><strong>Analytics engineering &amp; data engineering</strong></div>
+        <div class="grid">
+          <article class="achievement">
+            <span class="record-kind">01 · Workshop artifact</span>
+            <h3>Power BI dashboards</h3>
+            <p>Campfly sales and Netflix analysis dashboard pages, preserved in their original supplied PDF export.</p>
+          </article>
+          <article class="achievement">
+            <span class="record-kind">02 · Portfolio case study</span>
+            <h3>Reproducible claims analysis</h3>
+            <p>A documented synthetic-data exercise showcasing foundational analytical workflow; not real insurer or market findings.</p>
+          </article>
+          <article class="achievement">
+            <span class="record-kind">03 · Mentoring record</span>
+            <h3>Conscience Technologies</h3>
+            <p>Mini-project mentoring is recorded for April–May 2025 in earlier repository notes. Supporting documentation was not included.</p>
+          </article>
         </div>
-        <p style="margin-top:24px"><a href="https://github.com/nikhilamaragani-jpg/certificates-achievements/blob/main/docs/CAREER_ROADMAP.md">Read the full staged roadmap →</a></p>
-        <p class="callout" style="margin-top:24px">International roles are a target, not a guarantee. Visa sponsorship and work eligibility depend on the destination, employer and individual circumstances.</p>
+        <div class="learning-note" id="about">
+          <div>
+            <h3>How this collection is organized</h3>
+            <p>Course completions, workshops, internship/training certificates, offer letters and portfolio achievements are separated so a reviewer can understand exactly what each record proves. Dates and verification links are included only where present in the supplied evidence.</p>
+          </div>
+          <a class="button light" href="docs/CREDENTIALS.md">Full credential register</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <span>Amaragani Nikhil Sai · Data Analyst portfolio</span>
-      <span><a href="https://github.com/nikhilamaragani-jpg">GitHub</a> · <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements">Certificates &amp; achievements repository</a></span>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>Amaragani Nikhil Sai · Certificates &amp; Achievements</span>
+      <span><a href="https://github.com/nikhilamaragani-jpg">GitHub</a> · <a href="https://github.com/nikhilamaragani-jpg/certificates-achievements">Repository</a></span>
     </div>
   </footer>
+
   <script>
     const filterButtons = document.querySelectorAll(".filter-button");
-    const credentialCards = document.querySelectorAll(".credential-card");
-    const credentialCount = document.getElementById("credential-count");
+    const records = document.querySelectorAll(".record[data-category]");
+    const recordCount = document.getElementById("record-count");
 
     for (const button of filterButtons) {
       button.addEventListener("click", () => {
         const filter = button.dataset.filter;
         let visibleCount = 0;
 
-        for (const card of credentialCards) {
-          const isVisible = filter === "all" || card.dataset.category === filter;
-          card.hidden = !isVisible;
+        for (const record of records) {
+          const isVisible = filter === "all" || record.dataset.category === filter;
+          record.hidden = !isVisible;
           visibleCount += Number(isVisible);
         }
 
@@ -295,7 +327,7 @@
           filterButton.setAttribute("aria-pressed", String(filterButton === button));
         }
 
-        credentialCount.textContent = `Showing ${visibleCount} evidence ${visibleCount === 1 ? "record" : "records"}`;
+        recordCount.textContent = `Showing ${visibleCount} ${visibleCount === 1 ? "record" : "records"}`;
       });
     }
   </script>
