@@ -1,21 +1,23 @@
 # GitHub profile settings
 
-Suggested metadata for the GitHub profile and repository.
+Suggested metadata for the GitHub profile and certificates repository.
 
-**Profile description**
+## Profile description
 
-> Entry-level Data Analyst candidate | B.Tech CSE | IBM Introduction to Data Analytics | Building practical, documented analytics projects
+> Data Analyst | SQL · Power BI · Python · Business Intelligence | Open to international opportunities
 
-**Profile homepage**
+## Profile homepage
 
 https://nikhilamaragani-jpg.github.io/
 
-**Repository description**
+## Repository description
 
-> Certificates, training and achievements—organized with original evidence and clear status labels.
+> Evidence-led record of courses, certificates, workshops, and analytics portfolio milestones.
 
-**Repository topics**
+## Suggested repository topics
 
-`data-analytics`, `data-analyst`, `business-intelligence`, `power-bi`, `python`, `portfolio`, `certificates`
+`data-analytics`, `data-analyst`, `business-intelligence`, `power-bi`, `python`, `sql`, `portfolio`, `certificates`
 
-Keep artificial intelligence as an adjacent experience rather than the primary portfolio identity. Do not add PL-300, SQL, cloud or professional-certificate claims as completed until earned.
+## Evidence rule
+
+Do not add PL-300, advanced SQL, cloud, dbt, or full professional-certificate claims as completed until earned or demonstrated. Keep AI/ML as supporting technical breadth while Data Analytics remains the primary identity.
