@@ -8,6 +8,12 @@ A structured, evidence-led record of courses, certificates, workshops, technical
 
 > **IBM course status:** *Introduction to Data Analytics* is the first course in the IBM Data Analyst Professional Certificate. It is not the full professional certificate.
 
+## Current Data Analyst project
+
+The current portfolio flagship is the real-data **E-Commerce Operations & Customer Intelligence** case study. The certificate repository remains the evidence library; the analysis itself lives in the main portfolio repository.
+
+[Live analysis](https://nikhilamaragani-jpg.github.io/projects/ecommerce-operations-intelligence/dashboard/) · [Project repository](https://github.com/nikhilamaragani-jpg/nikhilamaragani-jpg.github.io/tree/main/projects/ecommerce-operations-intelligence)
+
 ## Browse the collection
 
 | Collection | Contents |
